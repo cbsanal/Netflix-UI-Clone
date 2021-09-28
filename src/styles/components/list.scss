@@ -1,0 +1,37 @@
+.list {
+  margin-top: 2rem;
+  .list-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-left: 5rem;
+  }
+  .list-container {
+    position: relative;
+    .sliderArrow {
+      width: 5rem;
+      height: 100%;
+      background: rgba(17, 17, 17, 0.4);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      cursor: pointer;
+      z-index: 99;
+      &.left {
+        left: 0;
+      }
+      &.right {
+        right: 0;
+      }
+    }
+    .list-item-container {
+      margin-left: 5rem;
+      margin-top: 1rem;
+      display: flex;
+      width: max-content;
+    }
+  }
+}
+.list:last-child {
+  margin-bottom: 12rem;
+}
